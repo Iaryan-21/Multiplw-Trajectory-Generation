@@ -26,3 +26,8 @@ CNN-based Architecture: Efficient, deep convolutional model that directly comput
 ` python train.py --config config.yaml
 `
 
+## Visualization
+`
+python visualization.py
+`
+
