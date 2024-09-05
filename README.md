@@ -12,5 +12,17 @@ Autonomous vehicles must navigate dynamic environments with unpredictable behavi
 Multimodal Prediction: Unlike single-trajectory predictions, this model infers multiple possible future paths and their associated probabilities.
 Bird’s-Eye View Rasterization: The method transforms an actor’s surrounding environment into raster images to provide context for prediction.
 Deep Convolutional Network (CNN) Architecture: A CNN model is used to predict multiple trajectories directly, allowing for more accurate long-term predictions.
-Abstract
+
+## Abstract
 Self-driving vehicles (SDVs) need to anticipate the possible movements of traffic actors around them to ensure safe and efficient driving. This project introduces a method that encodes an actor’s context into a raster image, which is then used by deep convolutional networks to predict future trajectories. By predicting multiple trajectories and their probabilities, this model helps address the uncertainty of dynamic environments.
+
+## Features
+Multimodal Prediction: Predict multiple future trajectories with associated probabilities.
+BEV Rasterization: Raster images encode the actor’s surrounding context (map and other actors).
+CNN-based Architecture: Efficient, deep convolutional model that directly computes multimodal predictions.
+
+## Training
+
+` python train.py --config config.yaml
+`
+
